@@ -1,0 +1,872 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: rubik, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: auto;
+}
+
+.cursiva{
+    font-style: italic;
+}
+
+/* ------------------- NAV ------------------- */
+
+nav{
+    width: 100%;
+    margin: auto;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    list-style: none;
+}
+
+nav li{
+    transition: all 0.5s ease; 
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+}
+
+nav li:hover{
+    background-color: #c883ed;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+nav a:hover{
+    color: #fff;
+}
+
+nav li img:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1000px) {  
+    nav ul {
+        flex-direction: column;
+        gap: 0.8rem;
+        padding: 0;
+    }
+
+    .intro h1 {
+        margin-top: 4rem;
+    }
+    
+    nav a {
+        font-size: 16px;
+    }
+
+    figcaption {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* ------------------- BANNER ------------------- */
+
+.banner{
+    max-width: 100%;
+    gap: 1rem;
+    margin-top: -1.2%;
+    text-align: center;
+}
+
+.banner img{
+    width: 80%;
+    max-height: 35rem;
+    margin-bottom: 2rem;
+}
+
+/* ------------------- SECCIONES ------------------- */
+
+.gcontainer {
+    margin: auto;
+    margin-top: -6%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.cgrid {
+    margin: auto;
+    width: 80%;
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    text-align: center;
+    padding: 2%;
+}
+
+.cgrid a {
+    text-decoration: none;
+    color: black;
+}
+  
+.cgrid > div {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: #b47ae0aa;
+    padding: 2%;
+    transition: 0.6s ease;
+    box-shadow:  9px 9px 27px #b275d3;
+}
+  
+.cgrid div:hover {
+    scale: 0.85;
+}
+.cgrid h2 {
+    font-size: 2rem;
+}
+
+.cgrid img {
+    width: 80%;
+    border-radius: 8px;
+}
+
+.cgrid p {
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 2px #6f6f6f60;
+}
+
+@media screen and (max-width: 1400px) {
+    .cgrid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 5%;
+    }
+
+    .gcontainer {
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .cgrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-row-gap: 2%;
+    }
+
+    .gcontainer {
+        margin-bottom: 20rem;
+    }
+}
+
+/* ------------------- FOOTER ------------------- */
+
+footer {
+    border-radius: 8px;
+    margin: auto;
+    width: 80%;
+    background-color: #b47ae064;
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.frase{
+    text-align: center;
+}
+
+.frase .uno{
+    font-size: 1.2rem;
+}
+
+.lista a {
+    color: #000;
+    text-decoration: none;
+}
+
+.lista ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 0.2rem; 
+}
+
+.lista h3 {
+    margin: 0; 
+}
+
+.cvolver{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem; 
+}
+
+.cvolver a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #c883ed;
+    padding: 0.6rem 1.25rem;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    text-align: center;
+}
+
+
+.volver:hover, .cvolver a:hover{
+    background-color: #a55bcf;
+}
+
+@media screen and (max-width: 1360px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        /* margin-top: 2%; */
+    }
+    
+    .lista ul {
+        flex-direction: row;
+        gap: 1rem;
+    }
+    
+    .cvolver {
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 677px) {
+    
+    .gcontainer{
+        margin-bottom: 2rem;
+    }
+
+    .lista ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin-top: 2%;
+    }
+    
+    .cvolver {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+
+}
+
+/* ------------------- DESARROLLADORES ------------------- */
+
+.contenedor{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.dcontenedor{
+    margin: auto;
+    width: 40%;
+    padding: 2%;
+    overflow: hidden;
+    border-radius: 39px;
+    background: linear-gradient(145deg, #b476d59d, #d68cfea9);
+    box-shadow:  9px 9px 27px #b275d3;
+    margin-bottom: 3%;
+    float: left;
+    text-align: center;
+}
+
+.dcontenedor img{
+    width: 60%;
+    border-radius: 39px;
+}
+
+#angel{
+    margin-left: 5%;
+}
+
+#miguel{
+    margin-right: 5%;
+}
+
+@media screen and (max-width: 1350px) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .dcontenedor {
+        width: 50%;
+        margin-bottom: 2%;
+        height: auto;
+    }
+
+    #angel{
+        margin: auto;
+        margin-bottom: 5%;
+    }
+
+    #miguel{
+        margin: auto;
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 1200) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .dcontenedor {
+        width: 70%;
+        margin-bottom: 2%;
+        height: auto;
+    }
+
+    #angel{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+
+    #miguel{
+        width: 100%;
+        margin: auto;
+    }
+}
+
+/* ------------------- DEFINICION ------------------- */
+
+.intro{
+    margin: auto;
+    width: 80%;
+    padding: 2%;
+    margin-top: -4rem;
+}
+
+.intro h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.intro h3{
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.intro p{
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.contenedortabla{
+    margin: auto;
+    width: 80%;
+    margin-top: -1rem;
+}
+
+.ctabla{
+    margin: auto;
+    width:70%;
+    text-align: center;
+}
+
+.ctabla table{
+    margin: auto;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: -0.5rem;
+}
+
+.ctabla th, td{
+    border: 1px solid black;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.textotabla{
+    margin: auto;
+    width: 100%;
+}
+
+.ctabla th:nth-child(odd) {
+    background-color: #c883ed;
+    color: white;
+}
+
+.ctabla td:nth-child(odd) {
+    background-color: #b47ae0aa;
+}
+
+.ctabla th:nth-child(even) {
+    background-color: #c883ed;
+    color: white;
+}
+
+.ctabla td:nth-child(even) {
+    background-color: #b47ae064;
+}
+
+@media screen and (max-width: 650px) {
+    .cdefinicion {
+        width: 90%;
+        padding: 1%;
+        margin-top: -2rem;
+    }
+    
+    .cdefinicion h1 {
+        font-size: 2rem;
+    }
+    
+    .cdefinicion p {
+        font-size: 0.9rem;
+    }
+    
+    .contenedortabla {
+        width: 90%;
+        margin-top: -1rem;
+    }
+    
+    .ctabla {
+        width: 90%;
+    }
+    
+    .ctabla table {
+        width: 100%;
+    }
+    
+    .ctabla th, td {
+        padding: 0.3rem;
+    }
+    
+    .textotabla {
+        width: 100%;
+    }
+
+    .dcontenedor h3{
+        font-size: .8rem;
+    }
+
+    figcaption{
+        font-size: .4rem;
+    }
+}
+
+/* ------------------- Factor Edad ------------------- */
+
+.grid4 {
+    margin: auto;
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 1.5rem;
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+}
+
+.grid4 > div{
+    width: 100%;
+    border-radius: 8px;
+    background-color: #c28ae3d1;
+    padding: 2%;
+    transition: 0.6s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: .5rem;
+}
+
+.grid4 > div:nth-child(even){
+    background-color: #c680eba9;
+}
+
+.grid4 h3 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.grid4 img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.piegrafico {
+    font-size: 1rem;
+    text-shadow: 2px 2px 2px #6f6f6f60;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+
+    .factoredad h1{
+        margin-top: 5rem;
+        font-size: 2rem;
+    }
+
+    .grid4 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        margin-top: 1rem;
+    }
+
+    .grid4 > div:nth-child(3) {
+        margin-bottom: 1rem;
+    }
+
+    .textofe h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* ------------------- Factor de Riesgo ------------------- */
+
+.riesgoflotado{
+    margin: auto;
+    width: 80%;
+    padding: 2%;
+    margin-bottom: 1rem;
+}
+
+.riesgotabla{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    float: left;
+    margin-top: -5rem;
+}
+
+.riesgotabla table{
+    margin: auto;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: -0.5rem;
+}
+
+.riesgotabla th{
+    border: 1px solid black;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: #c883ed;
+}
+
+.riesgotabla th:nth-child(odd) {
+    background-color: #c883ed;
+    color: white;
+}
+
+.riesgotabla td:nth-child(odd) {
+    background-color: #b47ae0aa;
+}
+
+.riesgotabla th:nth-child(even) {
+    background-color: #c883ed;
+    color: white;
+}
+
+.riesgotabla td:nth-child(even) {
+    background-color: #b47ae064;
+}
+
+.riesgolista{
+    margin: auto;
+    width: 50%;
+    float: left;
+    margin-bottom: 15rem;
+    margin-top: -10rem;
+}
+
+.riesgolista h3{
+    text-align: center;
+    
+}
+
+.riesgolista ul{
+    list-style-type: circle;
+}
+
+.riesgolista li{
+    margin-bottom: 1rem;
+}
+
+.riesgolista a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.riesgolista a:hover{
+    color: #c883ed;
+}
+
+@media screen and (max-width: 1550px) {
+    .riesgoflotado {
+        width: 90%;
+    }
+    
+    .riesgotabla {
+        width: 100%;
+        margin-top: -3rem;
+    }
+    
+    .riesgolista {
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+ 
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .riesgoflotado {
+        width: 90%;
+        padding: 1%;
+    }
+    
+    .riesgotabla {
+        width: 100%;
+        margin-top: -1rem;
+    }
+    
+    .riesgotabla table {
+        width: 100%;
+    }
+    
+    .riesgotabla th, td {
+        padding: 0.3rem;
+    }
+    
+    .riesgolista {
+        width: 90%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* ------------------- Causas ------------------- */
+
+.contenedorcausas {
+    margin: auto;
+    width: 80%;
+}
+
+.contenedorfactores {
+    margin: auto;
+    width: 80%;
+    padding: 2%;
+    margin-top: -1.5rem;
+    margin-bottom: 3rem;
+}
+
+.contenedorfactores h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+}
+
+.factores{
+    padding: 1%;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.factores:nth-child(even){
+    border-radius: 8px;
+    background-color: #b47ae064;
+    box-shadow:  9px 9px 27px #b275d3;
+}
+
+.factores:nth-child(odd){
+    border-radius: 8px;
+    background-color: #b47ae0aa;
+    box-shadow:  9px 9px 27px #b275d3;
+}
+
+.ctablafact {
+    margin: auto;
+    width: 80%;
+    padding: 2%;
+    margin-top: -1.5rem;
+    margin-bottom: 2rem;
+}
+
+.ctablafact h3 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.ctablafact table {
+    margin: auto;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: -0.5rem;
+}
+
+.ctablafact th,
+.ctablafact td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+}
+
+.ctablafact th{
+    background-color: #c883ed;
+    color: white;
+}
+
+.ctablafact th{
+    background-color: #c883ed;
+    color: white;
+}
+
+.ctablafact tr:nth-child(odd) td {
+    background-color: #b47ae0aa;
+}
+
+.ctablafact tr:nth-child(even) td {
+    background-color: #b47ae064;
+}
+
+@media screen and (max-width: 650px) {
+    .contenedorcausas {
+        width: 90%;
+    }
+    
+    .contenedorfactores {
+        width: 90%;
+        padding: 1%;
+        margin-top: -1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .contenedorfactores h2 {
+        font-size: 2rem;
+    }
+    
+    .factores {
+        padding: 0.5%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .ctablafact {
+        width: 90%;
+        padding: 1%;
+        margin-top: -1rem;
+    }
+    
+    .ctablafact h3 {
+        font-size: 2rem;
+    }
+    
+    .ctablafact th, td {
+        padding: 0.3rem;
+    }
+}
+
+/* ------------------- ESTADISTICAS ------------------- */
+
+.estadisticas-container {
+    margin: auto;
+    width: 90%;
+    margin-top: -0.7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.xml {
+    margin: auto;
+    width: 100%; 
+    text-align: center;
+}
+
+.iframe {
+    width: 30%;
+    height: 300px;
+}
+
+estadisticas {
+    display: block;
+    text-align: center;
+}
+
+violencia_genero_jovenes {
+    display: block;
+    text-align: center;
+}
+
+titulo {
+    color: #ffffff;
+    display: block;
+    font-size: 1.5rem;
+    font-family: rubik, sans-serif;
+    margin-top: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+numero_casos {
+    background-color: #b47ae0aa;
+    padding: 2%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: center;
+    font-family: rubik, sans-serif;
+    color: #333;
+    border-radius: 10px;
+}
+
+numero_casos[nombre="violenciaNoviazgo"],
+numero_casos[nombre="violenciaEducativos"] {
+    background-color: #be5ff1a9;
+}
+
+fecha {
+    color: #000000;
+    font-size: 1rem;
+    font-family: rubik, sans-serif;
+    margin-top: .5rem;
+}
+
+casos_hombres,
+casos_totales {
+    margin-bottom: .5rem;
+    margin-left: 3%;
+    display: block;
+    font-size: 1.5rem;
+    font-family: rubik, sans-serif;
+    font-weight: bold;
+}
+
+casos_mujeres {
+    margin-bottom: .5rem;
+    display: block;
+    font-size: 1.5rem;
+    font-family: rubik, sans-serif;
+    font-weight: bold;
+}

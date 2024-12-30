@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="estilos/style.css"?>
+<estadisticas>
+    <violencia_genero_jovenes>
+        <numero_casos nombre="violenciaNoviazgo">
+            <titulo>Violencia en el noviazgo</titulo>
+            <fecha>Fecha | 2023-05-30 |</fecha>
+            <casos_hombres>Casos en hombres | 50 |</casos_hombres>
+            <casos_mujeres>Casos en mujeres | 450 |</casos_mujeres>
+            <casos_totales>Casos totales | 100 |</casos_totales>
+        </numero_casos>
+    </violencia_genero_jovenes>
+</estadisticas>
+
